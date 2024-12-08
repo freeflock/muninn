@@ -12,4 +12,4 @@ else
     echo "building with cache"
 fi
 
-docker buildx build $BUILD_OPTIONS -t josiahdc/munnin:"${TAG}" .
+docker buildx build $BUILD_OPTIONS -t josiahdc/muninn:"${TAG}" .
