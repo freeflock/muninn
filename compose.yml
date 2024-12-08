@@ -1,0 +1,14 @@
+services:
+  muninn:
+    image: josiahdc/muninn:0.3
+    build:
+      context: .
+    networks:
+      - ratatosk_ratatosk
+    env_file:
+      - muninn.env
+
+
+networks:
+  ratatosk_ratatosk:
+    external: true
